@@ -1,0 +1,42 @@
+nav{
+	background-color: #26a69a;
+}
+.row{
+	padding-left: 190px;
+}
+
+.row1{
+	margin-left: 200px;
+}
+
+.row2{
+	margin-left: 0px;
+}
+
+.btn a{
+	color: white;
+}
+
+.btn{
+	margin-left: 48px;
+}
+
+h5{
+	text-align: center;
+	font-weight: bold;
+}
+
+.textblock a {
+	text-align: center;
+	display: inline-block;
+    margin: 0 30%;
+    color: black;
+}
+
+.textblock span{
+	color:#26a69a;
+}
+
+.textblock{
+	text-align: center;
+}
