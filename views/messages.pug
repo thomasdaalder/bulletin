@@ -1,10 +1,8 @@
 html
 	head
-
 		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
-
 		link(type='text/css', rel='stylesheet', href='../../css/materialize.min.css', media='screen,projection')
-
+		link(type='text/css', rel='stylesheet', href='../../css/style.css', media='screen,projection')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		nav
@@ -13,11 +11,15 @@ html
 				ul#nav-mobile.right.hide-on-med-and-down
 					li
 						a(href='messages') Messages
-		h3 Here you can see all the posted messages!
+		h4
 	
 				each allMessages in names
-					h5 #{allMessages.title}
-					p.someClass(style='font-family: Helvetica;') #{allMessages.body} 
+					.rowcard
+						.col.s12.m6
+							.card.blue-grey.darken-1
+								.card-content.white-text
+									span.card-title #{allMessages.title}
+									p #{allMessages.body}
 
 			
 		script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')

@@ -32,20 +32,13 @@ app.post('/messages', function(req, res){
 	console.log(req.body)
 	db.Messages.create({
 		title: req.body.title,
-		body: req.body.body
+		body: req.body.body,
+		name: req.body.name
 	})
 	.then(()=>{
 		res.redirect('/messages');
 	})
 });
-
-// app.get('/messages', function(req, res){
-//     db.Messages.findAll()
-//     .then((allMessages) => {
-//         res.render('messages', {names: allMessages});
-//     })    
-// })
-
 
 app.listen(3000, () => {
 	console.log('Server has started.');

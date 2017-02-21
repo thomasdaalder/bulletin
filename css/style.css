@@ -3,6 +3,7 @@ nav{
 }
 .row{
 	padding-left: 190px;
+	padding-top: 100px;
 }
 
 .row1{
@@ -24,6 +25,8 @@ nav{
 h5{
 	text-align: center;
 	font-weight: bold;
+	margin-top: 50px;
+
 }
 
 .textblock a {
@@ -31,10 +34,6 @@ h5{
 	display: inline-block;
     margin: 0 30%;
     color: black;
-}
-
-.textblock span{
-	color:#26a69a;
 }
 
 .textblock{
