@@ -39,3 +39,13 @@ h5{
 .textblock{
 	text-align: center;
 }
+
+.card a{
+	color: white;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.card {
+	color: black;
+}

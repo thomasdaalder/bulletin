@@ -12,9 +12,15 @@ const Messages = db.define('messages', {
 		type: Sequelize.STRING,
 		allowNull: false,
 	},
+	name: {
+		type: Sequelize.STRING,
+		allowNull: false,
+	}
 });
 
-db.sync()
+db.sync({
+	force: true
+})
 
 .catch( (error) => console.log(error) );
 
